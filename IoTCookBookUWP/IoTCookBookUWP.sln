@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTCookBookUWP", "IoTCookBookUWP\IoTCookBookUWP.csproj", "{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensors.Dht", "Sensors.Dht\Sensors.Dht.vcxproj", "{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|ARM.Build.0 = Debug|ARM
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|ARM.Deploy.0 = Debug|ARM
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|x64.ActiveCfg = Debug|x64
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|x64.Build.0 = Debug|x64
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|x64.Deploy.0 = Debug|x64
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|x86.ActiveCfg = Debug|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|x86.Build.0 = Debug|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Debug|x86.Deploy.0 = Debug|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|Any CPU.ActiveCfg = Release|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|ARM.ActiveCfg = Release|ARM
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|ARM.Build.0 = Release|ARM
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|ARM.Deploy.0 = Release|ARM
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|x64.ActiveCfg = Release|x64
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|x64.Build.0 = Release|x64
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|x64.Deploy.0 = Release|x64
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|x86.ActiveCfg = Release|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|x86.Build.0 = Release|x86
+		{D767CD4A-3133-4D0F-8EA3-470D0A3BCC32}.Release|x86.Deploy.0 = Release|x86
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|ARM.Build.0 = Debug|ARM
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|x64.ActiveCfg = Debug|x64
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|x64.Build.0 = Debug|x64
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|x86.ActiveCfg = Debug|Win32
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Debug|x86.Build.0 = Debug|Win32
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|ARM.ActiveCfg = Release|ARM
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|ARM.Build.0 = Release|ARM
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|x64.ActiveCfg = Release|x64
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|x64.Build.0 = Release|x64
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|x86.ActiveCfg = Release|Win32
+		{2CD70A4F-9EED-4CDA-9E07-1A2BD33B4976}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
