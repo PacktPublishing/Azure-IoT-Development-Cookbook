@@ -16,14 +16,19 @@ namespace SimulatedDevice
 
             try
             {
+                Console.WriteLine("IoT SDK HTTPS Communication");
                 HttpDeviceMessages(AzureIoTHub.deviceId);
 
+                Console.WriteLine("IoT SDK AMQP Communication");
                 AmqpDeviceMessages(AzureIoTHub.deviceId);
 
+                Console.WriteLine("IoT SDK MQTT Communication");
                 MqttDeviceMessages(AzureIoTHub.deviceId);
 
+                Console.WriteLine("AMQP Communication");
                 AmqpMessages(AzureIoTHub.deviceId);
 
+                Console.WriteLine("MQTT Communication");
                 MqttMessages(AzureIoTHub.deviceId, AzureIoTHub.deviceKey);
 
                 Console.ReadLine();
@@ -36,32 +41,39 @@ namespace SimulatedDevice
                     Console.WriteLine("Error in sample: {0}", exception);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 //Some code here
+                Console.WriteLine("Error in sample: {0}", ex.Message);
             }
         }
 
         private static void MqttDeviceMessages(string deviceId)
         {
-            var deviceClient = DeviceClient.CreateFromConnectionString(AzureIoTHub.GetConnectionString(), TransportType.Mqtt);
-
-            new DeviceSimulator(deviceClient).SendDeviceToCloudMessagesAsync(deviceId);             
+            SendDeviceMessages(deviceId, TransportType.Mqtt);
         }
 
         private static void AmqpDeviceMessages(string deviceId)
         {
-            var deviceClient = DeviceClient.CreateFromConnectionString(AzureIoTHub.GetConnectionString(), TransportType.Amqp);
-
-            new DeviceSimulator(deviceClient).SendDeviceToCloudMessagesAsync(deviceId);
+            SendDeviceMessages(deviceId, TransportType.Amqp);
         }
 
         private static void HttpDeviceMessages(string deviceId)
         {
-            var deviceClient = DeviceClient.CreateFromConnectionString(AzureIoTHub.GetConnectionString(), TransportType.Http1);
+            SendDeviceMessages(deviceId, TransportType.Http1);
+        }
 
+        /// <summary>
+        /// Send Device to Cloud Message
+        /// </summary>
+        /// <param name="deviceId"></param>
+        /// <param name="transportType"></param>
+        private static void SendDeviceMessages(string deviceId, TransportType transportType)
+        {
+            var deviceClient = DeviceClient.CreateFromConnectionString(AzureIoTHub.GetDeviceConnectionString(), transportType);
             new DeviceSimulator(deviceClient).SendDeviceToCloudMessagesAsync(deviceId);
         }
+
 
         /// <summary>
         /// 
